@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>JQueryTest</title>
+    <script src="../../WEB-INF/js/jquery-1.12.3.min.js"></script>
+    <style>
+        .test{
+            background: center;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<div>
+    文本信息：<input type="text" val="请输入文本" class="test"/>
+    <input type="button" id="button">测试
+</div>
+<script>
+    $(function () {
+        $('.test').css({'color':"yellow","background":"center"});
+    })
+    $("#button").click(function(){
+        $(".test").removeClass(".test");
+    })
+
+</script>
+</body>
+</html>
