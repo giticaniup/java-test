@@ -1,8 +1,11 @@
 package com.kode.test.solr;
 
 import org.apache.solr.client.solrj.SolrClient;
+import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
+import org.apache.solr.client.solrj.response.QueryResponse;
+import org.apache.solr.common.SolrDocumentList;
 import org.apache.solr.common.SolrInputDocument;
 
 import java.io.IOException;
@@ -25,28 +28,53 @@ public class Test {
     public static void main(String[] args) {
         SolrClient client = getSolrClient();
         int i = 0;
-        List<SolrInputDocument> solrDocs = new ArrayList<SolrInputDocument>();
+        List<SolrInputDocument> solrDocs = new ArrayList<>();
         for (String content : docs) {
             SolrInputDocument doc = new SolrInputDocument();
             doc.addField("id", i++);
-            doc.addField("name", content);
+            doc.addField("suggestion", content);
             solrDocs.add(doc);
         }
         try {
             client.add(solrDocs);
             client.commit();
-        } catch (SolrServerException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
+        } catch (SolrServerException | IOException e) {
             e.printStackTrace();
         }
 
     }
 
     public static SolrClient getSolrClient() {
-        return new HttpSolrClient(solrServerUrl + "/" + solrCroeHome);
+        return new HttpSolrClient.Builder(solrServerUrl+"/"+solrCroeHome).build();
+    }
+
+    @org.junit.Test
+    public void perfromingQuery(){
+        long beginTime = System.currentTimeMillis();
+        SolrClient client = getSolrClient();
+        SolrQuery solrQuery = new SolrQuery();
+        solrQuery.setRequestHandler("/select");
+        solrQuery.setQuery("*:*");
+
+        //设置域
+        solrQuery.setFields("name");
+        //solrQuery.setHighlight(true);
+        //设置过滤条件
+        solrQuery.setFilterQueries("name:solr");
+        try {
+            QueryResponse response = client.query(solrQuery);
+            SolrDocumentList list = response.getResults();
+            System.out.println(list);
+        } catch (SolrServerException | IOException e) {
+            e.printStackTrace();
+        }
+        long endTime = System.currentTimeMillis();
+        System.out.println(endTime-beginTime);
+    }
+
+    @org.junit.Test
+    public void testSolrServer(){
+        
     }
 
 }
