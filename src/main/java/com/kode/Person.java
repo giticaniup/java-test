@@ -38,7 +38,7 @@ public class Person {
         this.age = age;
     }
 
-    Person(){
+    public Person(){
 
     }
 }
