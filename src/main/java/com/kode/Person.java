@@ -10,6 +10,12 @@ public class Person {
     String name;
     int age;
 
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+
     public String getName() {
         return name;
     }
@@ -34,7 +40,7 @@ public class Person {
                 .toString();
     }
 
-    Person(int age){
+    public Person(int age){
         this.age = age;
     }
 
