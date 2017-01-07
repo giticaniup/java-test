@@ -1,3 +1,5 @@
+import java.nio.channels.Channel;
+
 //package com.kode.rabbitmq;
 //
 //import com.rabbitmq.client.Channel;

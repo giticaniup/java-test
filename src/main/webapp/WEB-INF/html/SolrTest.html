@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SolrTest</title>
+    <script src="../../WEB-INF/js/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+<script>
+    $(document).ready(function () {
+        var url="http://localhost:8080/solr/goodtime/select?json.wrf=?";
+        $.ajax({
+                    type: "get",
+                    url: url,
+                    data:{fl:"name",
+                          indent:"on",
+                          q:"name:服务器",
+                          wt:"json"
+                    },
+                    dataType:"jsonp",
+                    success:function(result){
+                        console.log(result);
+                    }
+                }
+        )
+    })
+</script>
+</body>
+</html>
