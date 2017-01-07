@@ -33,7 +33,7 @@ public class RandomFileTest {
     @Test
     public void testRandomWrite() throws Exception{
         RandomAccessFile randomAccessFile = new RandomAccessFile("C:/file/1.txt","rw");
-        randomAccessFile.write("hello".getBytes(),1,"hello".getBytes().length);
+        randomAccessFile.write("hello".getBytes(),0,"hello".getBytes().length);
         randomAccessFile.close();
     }
 }
