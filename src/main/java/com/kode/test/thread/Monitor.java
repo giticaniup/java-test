@@ -8,16 +8,16 @@ import java.util.concurrent.TimeUnit;
 public class Monitor {
 
     public static void main(String[] args) throws InterruptedException {
-        Thread1 thread1 = new Thread1();
-        Thread2 thread2 = new Thread2();
+        Thread10 thread1 = new Thread10();
+        Thread20 thread20 = new Thread20();
         thread1.start();
-        thread2.start();
+        thread20.start();
         TimeUnit.SECONDS.sleep(2);
-        thread2.noAll();
+        thread20.noAll();
     }
 }
 
-class Thread1 extends Thread {
+class Thread10 extends Thread {
     @Override
     public synchronized void run() {
         System.out.println("thread1 run...");
@@ -30,7 +30,7 @@ class Thread1 extends Thread {
     }
 }
 
-class Thread2 extends Thread {
+class Thread20 extends Thread {
     @Override
     public synchronized void run() {
         try {

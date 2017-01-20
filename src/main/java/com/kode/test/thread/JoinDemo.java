@@ -11,7 +11,7 @@ public class JoinDemo {
     public static void main(String[] args) throws InterruptedException {
         System.out.println(MAX==MAXIMUM_CAPACITY);
         System.out.println("main Thread is running....");
-        Thread1 thread1 = new Thread1();
+        Thread10 thread1 = new Thread10();
         thread1.start();
         thread1.join();
         System.out.println("main Thread is over...");
@@ -21,10 +21,10 @@ public class JoinDemo {
 class Thread1 extends Thread {
     @Override
     public void run(){
-        Thread2 thread2 = new Thread2();
-        thread2.start();
+        Thread20 thread20 = new Thread20();
+        thread20.start();
         try {
-            thread2.join();
+            thread20.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

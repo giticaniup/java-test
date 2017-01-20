@@ -63,13 +63,14 @@ public class CollectionDemo3 {
     @Test
     public void testSort(){
         List<Person> list = new ArrayList<>();
-        list.add(new Person(2));
         list.add(new Person(1));
+        list.add(new Person(2));
         list.add(new Person(3));
 //        Collections.sort(list);
         System.out.println(list);
         list.sort(Comparator.comparing(Person::getAge));
         System.out.println(list);
+        System.out.println(        list.listIterator(list.size()-1).next().toString());
     }
 
 }
