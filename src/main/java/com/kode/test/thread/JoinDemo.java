@@ -23,10 +23,10 @@ public class JoinDemo {
 class Thread01 extends Thread {
     @Override
     public void run(){
-        Thread02 thread02 = new Thread02();
-        thread02.start();
+        Thread021 thread021 = new Thread021();
+        thread021.start();
         try {
-            thread02.join();
+            thread021.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -38,7 +38,7 @@ class Thread01 extends Thread {
         }
     }
 }
-class Thread02 extends Thread {
+class Thread021 extends Thread {
     @Override
     public void run(){
         System.out.println("thread2 is running");

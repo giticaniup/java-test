@@ -9,15 +9,15 @@ public class Monitor {
 
     public static void main(String[] args) throws InterruptedException {
         Thread01 thread01 = new Thread01();
-        Thread02 thread02 = new Thread02();
+        Thread021 thread021 = new Thread021();
         thread01.start();
-        thread02.start();
+        thread021.start();
         TimeUnit.SECONDS.sleep(2);
-        thread02.notifyAll();
+        thread021.notifyAll();
     }
 }
 
-class Thread1 extends Thread {
+class Thread10 extends Thread {
     @Override
     public synchronized void run() {
         System.out.println("thread1 run...");
@@ -30,7 +30,7 @@ class Thread1 extends Thread {
     }
 }
 
-class Thread2 extends Thread {
+class Thread02 extends Thread {
     @Override
     public synchronized void run() {
         try {
