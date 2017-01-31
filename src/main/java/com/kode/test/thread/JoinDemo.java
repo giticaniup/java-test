@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * join()方法，执行完join线程后继续执行
+ * 箭头向哪偏哪里
  * Created by zhongcy on 2016/9/27.
  */
 public class JoinDemo {
