@@ -8,12 +8,12 @@ import java.util.concurrent.TimeUnit;
 public class Monitor {
 
     public static void main(String[] args) throws InterruptedException {
-        Thread1 thread1 = new Thread1();
-        Thread2 thread2 = new Thread2();
-        thread1.start();
-        thread2.start();
+        Thread01 thread01 = new Thread01();
+        Thread02 thread02 = new Thread02();
+        thread01.start();
+        thread02.start();
         TimeUnit.SECONDS.sleep(2);
-        thread2.noAll();
+        thread02.notifyAll();
     }
 }
 
