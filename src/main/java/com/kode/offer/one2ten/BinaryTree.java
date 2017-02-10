@@ -13,6 +13,15 @@ public class BinaryTree {
 
     public BinaryTree right;
 
+    public BinaryTree() {
+    }
+
+    public BinaryTree(int val) {
+        this.val = val;
+        this.left = null;
+        this.right = null;
+    }
+
     @Override
     public String toString() {
         return MoreObjects.toStringHelper(this)
@@ -21,4 +30,5 @@ public class BinaryTree {
                 .add("right", right)
                 .toString();
     }
+
 }
