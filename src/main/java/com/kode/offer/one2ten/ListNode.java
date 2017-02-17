@@ -3,6 +3,7 @@ package com.kode.offer.one2ten;
 import com.google.common.base.MoreObjects;
 
 import java.util.List;
+import java.util.Objects;
 
 /**
  * 链表结构，用于基础使用
@@ -27,6 +28,20 @@ public class ListNode {
 
     public void setNext(ListNode next) {
         this.next = next;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ListNode)) return false;
+        ListNode listNode = (ListNode) o;
+        return getVal() == listNode.getVal() &&
+                Objects.equals(getNext(), listNode.getNext());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getVal(), getNext());
     }
 
     @Override

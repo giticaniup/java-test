@@ -12,7 +12,7 @@ import java.util.Arrays;
  * 是否稳定：是
  * Created by zhongcy on 2017/2/10.
  */
-public class SimpleSort {
+public class SimpleSelectSort {
     public int[] simpleSort(int[] array){
         for(int i=0;i<array.length;i++){
             int min = i;

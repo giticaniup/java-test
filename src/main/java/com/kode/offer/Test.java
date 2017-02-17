@@ -2,6 +2,7 @@ package com.kode.offer;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * 简单测试
@@ -25,5 +26,9 @@ public class Test {
         Double d = Double.MAX_VALUE-1000000;
         System.out.println("long"+Long.MAX_VALUE);
         System.out.println("double"+d.longValue());
+
+        for(int i=0;i<10;i++){
+            System.out.println(new Random().nextInt());
+        }
     }
 }
