@@ -8,7 +8,7 @@ import java.lang.reflect.Proxy;
  * 动态代理类
  * Created by zhongcy on 2016/6/3.
  */
-public class DynamicCountProxy<T> implements InvocationHandler {
+public class DynamicCountProxy implements InvocationHandler {
     public Object object;
 
     public <T> T bind(T object) {
