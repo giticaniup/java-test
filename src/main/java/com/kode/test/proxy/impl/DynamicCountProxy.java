@@ -18,7 +18,7 @@ public class DynamicCountProxy implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.println("动态代理");
+        System.out.println("动态代理前");
         Object result = method.invoke(object, args);
         System.out.println("代理后");
         return result;
