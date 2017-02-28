@@ -8,7 +8,8 @@ import com.kode.test.proxy.Count;
  */
 public class CountImpl implements Count {
     @Override
-    public void count() {
+    public int count() {
         System.out.println("计数");
+        return 1;
     }
 }
