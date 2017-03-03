@@ -2,6 +2,7 @@ package com.kode.designpattern.strategy;
 
 /**
  * 把要做的事情包装到Context中，与装饰器模式不同的是，Wrapper类不继承同一父类
+ * 也就是Delegate模式？
  * Created by zhongcy on 2017-03-02.
  */
 public class Main {
