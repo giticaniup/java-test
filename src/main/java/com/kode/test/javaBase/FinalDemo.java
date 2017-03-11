@@ -5,6 +5,7 @@ import com.google.common.base.MoreObjects;
 import java.util.List;
 
 /**
+ * final必须初始化
  * Created by zhongcy on 2016/12/24.
  */
 public class FinalDemo {
