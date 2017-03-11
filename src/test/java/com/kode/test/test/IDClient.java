@@ -15,7 +15,7 @@
 //
 //    @Autowired
 //    private IDClientTest idClientTest;
-//    @org.junit.Test
+//    @org.junit.AtomicIntegerFieldUpdaterDemo
 //    public void test() {
 //        idClientTest.test();
 //    }

@@ -5,6 +5,7 @@ import java.util.Arrays;
 /**
  * 归并排序
  * 算法思想:先拆再合，递归实现
+ * 在合并的过程中将结果复制到数组中
  * 复杂度:nlogn
  * 是否稳定：是
  * Created by zhongcy on 2017/2/14.

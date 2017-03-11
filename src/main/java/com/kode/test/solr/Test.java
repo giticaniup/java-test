@@ -12,7 +12,7 @@
 //import java.util.ArrayList;
 //import java.util.List;
 //
-//public class Test {
+//public class AtomicIntegerFieldUpdaterDemo {
 //    //solr 服务器地址
 //    public static final String solrServerUrl = "http://localhost:8080/solr";
 //    //solrhome下的core
@@ -48,7 +48,7 @@
 //        return new HttpSolrClient.Builder(solrServerUrl+"/"+solrCroeHome).build();
 //    }
 //
-//    @org.junit.Test
+//    @org.junit.AtomicIntegerFieldUpdaterDemo
 //    public void perfromingQuery(){
 //        long beginTime = System.currentTimeMillis();
 //        SolrClient client = getSolrClient();
@@ -72,7 +72,7 @@
 //        System.out.println(endTime-beginTime);
 //    }
 //
-//    @org.junit.Test
+//    @org.junit.AtomicIntegerFieldUpdaterDemo
 //    public void testSolrServer(){
 //
 //    }

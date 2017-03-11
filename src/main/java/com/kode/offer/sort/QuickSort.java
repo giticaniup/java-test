@@ -26,7 +26,7 @@ public class QuickSort {
         int temp = array[low];
         while (low < high) {
             //大的在右侧，小的在左侧
-            while (low < high && array[high] > temp) {
+            while (low < high && array[high] >= temp) {
                 high--;
             }
             Utils.swap(array, low, high);
@@ -43,7 +43,7 @@ public class QuickSort {
         int temp = array[low];
         while (low < high) {
             //大的在右侧，小的在左侧
-            while (low < high && array[high] > temp) {
+            while (low < high && array[high] >= temp) {
                 high--;
             }
             array[low] = array[high];
@@ -58,7 +58,7 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        int[] array = {2, 3, 9, 5, 1, 7, 6, 8, 4};
+        int[] array = {2, 3, 9, 9, 1, 7, 6, 8, 4};
         System.out.println(Arrays.toString(qSort(array, 0, array.length - 1)));
     }
 }
