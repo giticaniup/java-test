@@ -8,8 +8,20 @@ package com.kode.vm;
 public class StringIntern {
     public static void main(String[] args) {
         String str = new StringBuilder("ja").append("va").toString();
-        System.out.println(str.intern()==str);
-        String str1 = new StringBuilder("计算机").append("互联网").toString();
-        System.out.println(str1.intern()==str1);
+        System.out.println(str.intern() == str);
+        String strTest = new StringBuilder("计算机").append("互联网").toString();
+        System.out.println(strTest.intern() == strTest);
+
+        String str1 = "a";
+        String str2 = "b";
+        String str3 = "ab";
+        String str4 = str1 + str2;
+        String str5 = new String("ab");
+
+        System.out.println(str5.equals(str3));
+        System.out.println(str5 == str3);
+        //intern返回string池中的对象，如果池中含有一个对象则返回，否则创建
+        System.out.println(str5.intern() == str3);
+        System.out.println(str5.intern() == str4);
     }
 }
