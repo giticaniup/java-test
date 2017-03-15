@@ -3,6 +3,7 @@ package com.kode.concurrent;
 import java.util.concurrent.ArrayBlockingQueue;
 
 /**
+ * 通过BlockingQueue来实现生产者、消费者
  * Created by zhongcy on 2017/2/6.
  */
 public class BlockingQueueDemo {
