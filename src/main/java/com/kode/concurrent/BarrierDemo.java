@@ -8,7 +8,8 @@ import java.util.concurrent.Executors;
 /**
  * 栅栏Demo
  * 设置一个屏障，等待所有的线程到达后开始运行
- * 每个await()方法使barrier -1
+ * 每个await()方法使barrier +1
+ * 到达N之后唤醒所有的阻塞线程，后面调用await也可以直接通过
  * CyclicBarrier是可重入的
  * Created by zhongcy on 2017-02-27.
  */
