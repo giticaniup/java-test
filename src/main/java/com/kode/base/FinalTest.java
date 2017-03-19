@@ -2,6 +2,7 @@ package com.kode.base;
 
 /**
  * finally都会执行，除非用了system.exit()
+ * 如果用了exit()则，则函数不会返回
  * Created by zhongcy on 2017-03-06.
  */
 public class FinalTest {
