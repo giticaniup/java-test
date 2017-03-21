@@ -5,5 +5,5 @@ package com.kode.designpattern.factory;
  * Created by zhongcy on 2017-02-27.
  */
 public abstract class AbstractFactory {
-    public  abstract   <T extends AbstractProduct> T create(Class<T> clazz);
+    public abstract <T extends AbstractProduct> T create(Class<T> clazz);
 }

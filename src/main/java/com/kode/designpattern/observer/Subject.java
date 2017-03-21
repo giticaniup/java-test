@@ -10,15 +10,15 @@ public abstract class Subject {
 
     protected List<Observer> observerList = new ArrayList<>();
 
-    public void add(Observer observer){
+    public void add(Observer observer) {
         observerList.add(observer);
     }
 
-    public void delete(Observer observer){
+    public void delete(Observer observer) {
         observerList.remove(observer);
     }
 
-    public void notifyObserver(){
+    public void notifyObserver() {
         observerList.forEach(Observer::update);
     }
 

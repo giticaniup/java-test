@@ -58,14 +58,14 @@ public class Demo1 {
         Integer i = 1;
 //        System.out.println(String.valueOf(i));
         System.out.println((++i));
-        Joiner.on("").join("",null);
+        Joiner.on("").join("", null);
     }
 
     @Test
-    public void testException(){
-        try{
-            int i=1/0;
-        }catch (Exception e){
+    public void testException() {
+        try {
+            int i = 1 / 0;
+        } catch (Exception e) {
             System.out.println(e);
             System.out.println(e.getMessage());
             System.out.println(e.getLocalizedMessage());
@@ -73,10 +73,10 @@ public class Demo1 {
     }
 
     @Test
-    public void testDouble(){
+    public void testDouble() {
         double a = 1.1;
         double b = 0.1;
-        System.out.println(a+b);
+        System.out.println(a + b);
     }
 
 }

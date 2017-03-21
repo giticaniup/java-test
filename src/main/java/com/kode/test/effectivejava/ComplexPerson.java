@@ -17,7 +17,7 @@ public class ComplexPerson {
 
     private int height;
 
-    public static class Builder{
+    public static class Builder {
         private String name;
 
         private int sex;
@@ -33,27 +33,27 @@ public class ComplexPerson {
             this.sex = sex;
         }
 
-        public Builder age(int age){
+        public Builder age(int age) {
             this.age = age;
             return this;
         }
 
-        public Builder birthday(Date birthday){
+        public Builder birthday(Date birthday) {
             this.birthday = birthday;
             return this;
         }
 
-        public Builder height(int height){
+        public Builder height(int height) {
             this.height = height;
             return this;
         }
 
-        public ComplexPerson build(){
+        public ComplexPerson build() {
             return new ComplexPerson(this);
         }
     }
 
-    private ComplexPerson(Builder builder){
+    private ComplexPerson(Builder builder) {
         this.name = builder.name;
         this.sex = builder.sex;
         this.age = builder.age;

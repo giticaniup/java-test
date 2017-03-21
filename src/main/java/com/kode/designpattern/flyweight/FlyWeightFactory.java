@@ -9,18 +9,18 @@ import java.util.Map;
  * Created by zhongcy on 2017-03-03.
  */
 public class FlyWeightFactory {
-    private Map<String,FlyWeight> pool = new HashMap<>();
+    private Map<String, FlyWeight> pool = new HashMap<>();
 
     private FlyWeightFactory() {
     }
 
-    public FlyWeight getInstance(String key){
+    public FlyWeight getInstance(String key) {
         FlyWeight flyWeight;
-        if(pool.containsKey(key)){
-            flyWeight =  pool.get(key);
-        }else {
+        if (pool.containsKey(key)) {
+            flyWeight = pool.get(key);
+        } else {
             flyWeight = new ConcreteFlyWeight(key);
-            pool.put(key,flyWeight);
+            pool.put(key, flyWeight);
         }
         return flyWeight;
     }

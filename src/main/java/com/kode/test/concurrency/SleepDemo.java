@@ -10,7 +10,7 @@ public class SleepDemo {
         st.start();
         st.interrupt();
         Thread.sleep(1000);
-        System.out.println(st.getName()+st.isInterrupted());
+        System.out.println(st.getName() + st.isInterrupted());
     }
 }
 
@@ -19,15 +19,15 @@ class SleepThread extends Thread {
     public void run() {
         try {
             for (int i = 0; i < 5; i++) {
-                System.out.println("1"+getState());
+                System.out.println("1" + getState());
                 sleep(1000);
-                System.out.println("2"+getState());
+                System.out.println("2" + getState());
                 System.out.println("after");
             }
         } catch (InterruptedException e) {
 //            Thread.interrupted();
             Thread.currentThread().interrupt();
-            System.out.println(Thread.currentThread().getName()+Thread.currentThread().isInterrupted());
+            System.out.println(Thread.currentThread().getName() + Thread.currentThread().isInterrupted());
             System.out.println("exception");
             System.out.println(getState());
         }

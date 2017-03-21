@@ -20,7 +20,7 @@ public class ShellSort {
             for (int i = 0; i < d; i++) {
                 //内部为插入排序
                 for (int j = i + d; j < array.length; j = j + d) {
-                    if(array[j]<array[j-d]) {
+                    if (array[j] < array[j - d]) {
                         int temp = array[j];
                         int q;
                         //一个个做插入排序，保证前面为有序数组

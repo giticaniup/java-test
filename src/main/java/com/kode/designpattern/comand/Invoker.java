@@ -10,7 +10,7 @@ public class Invoker {
         this.command = command;
     }
 
-    public void action(){
+    public void action() {
         this.command.excute();
     }
 }

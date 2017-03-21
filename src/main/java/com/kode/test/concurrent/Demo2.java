@@ -1,9 +1,7 @@
 package com.kode.test.concurrent;
 
-import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
-import java.util.concurrent.FutureTask;
 
 /**
  * Future中抛出异常如何返回？
@@ -16,7 +14,7 @@ public class Demo2 {
             throw new RuntimeException();
         });
         ThreadUtil.THREAD_POOL.shutdown();
-        if(future.get().getClass().equals(ExecutionException.class)){
+        if (future.get().getClass().equals(ExecutionException.class)) {
 //            System.out.println("exception");
         }
     }

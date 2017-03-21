@@ -5,6 +5,6 @@ package com.kode.test.proxy;
  */
 public interface Singer {
 
-      void sing();
+    void sing();
 
 }

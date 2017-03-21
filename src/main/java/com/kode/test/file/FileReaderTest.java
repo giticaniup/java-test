@@ -11,7 +11,7 @@ public class FileReaderTest {
         File file = new File("c:/file/1.txt");
         FileReader fileReader = new FileReader(file);
         char[] c = new char[1024];
-        while (fileReader.read(c)!=-1){
+        while (fileReader.read(c) != -1) {
             System.out.println(c);
         }
 //        int result;

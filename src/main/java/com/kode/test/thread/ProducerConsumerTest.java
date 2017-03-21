@@ -2,7 +2,7 @@ package com.kode.test.thread;
 
 public class ProducerConsumerTest {
 
-    public static void main(String []args){
+    public static void main(String[] args) {
         Container con = new Container();
         Producer p = new Producer(con);
         Producer p1 = new Producer(con);
@@ -13,23 +13,25 @@ public class ProducerConsumerTest {
     }
 }
 
-class Goods{
+class Goods {
     int id;
-    public Goods(int id){
-        this.id=id;
+
+    public Goods(int id) {
+        this.id = id;
     }
 
-    public String toString(){
-        return "商品"+this.id;
+    public String toString() {
+        return "商品" + this.id;
     }
 }
-class Container{//容器采用栈，先进后出
+
+class Container {//容器采用栈，先进后出
     private int index = 0;
     Goods[] goods = new Goods[6];
 
-    public synchronized void push(Goods good){
-        System.out.println(Thread.currentThread().getName()+good);
-        while(index==goods.length){//当容器满了，生产者等待
+    public synchronized void push(Goods good) {
+        System.out.println(Thread.currentThread().getName() + good);
+        while (index == goods.length) {//当容器满了，生产者等待
             try {
                 wait();
             } catch (InterruptedException e) {
@@ -37,13 +39,13 @@ class Container{//容器采用栈，先进后出
                 e.printStackTrace();
             }
         }
-        goods[index]=good;
+        goods[index] = good;
         index++;
         notifyAll();//当生产者放入商品后通知消费者
     }
 
-    public synchronized Goods pop(){
-        while(index==0){//当容器内没有商品是等待
+    public synchronized Goods pop() {
+        while (index == 0) {//当容器内没有商品是等待
             try {
                 wait();
             } catch (InterruptedException e) {
@@ -56,18 +58,20 @@ class Container{//容器采用栈，先进后出
         return goods[index];
     }
 }
-class Producer implements Runnable{
+
+class Producer implements Runnable {
 
     Container con = new Container();
-    public Producer(Container con){
-        this.con=con;
+
+    public Producer(Container con) {
+        this.con = con;
     }
 
-    public void run(){
-        for(int i=0; i<20; i++){
+    public void run() {
+        for (int i = 0; i < 20; i++) {
             Goods good = new Goods(i);
             con.push(good);
-            System.out.println("生产了："+good);
+            System.out.println("生产了：" + good);
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
@@ -78,17 +82,19 @@ class Producer implements Runnable{
     }
 
 }
-class Consumer implements Runnable{
+
+class Consumer implements Runnable {
 
     Container con = new Container();
-    public Consumer(Container con){
-        this.con=con;
+
+    public Consumer(Container con) {
+        this.con = con;
     }
 
-    public void run(){
-        for(int i=0; i<20; i++){
-            Goods good=con.pop();
-            System.out.println("消费了："+good);
+    public void run() {
+        for (int i = 0; i < 20; i++) {
+            Goods good = con.pop();
+            System.out.println("消费了：" + good);
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {

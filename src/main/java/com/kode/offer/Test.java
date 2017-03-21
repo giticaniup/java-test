@@ -14,20 +14,20 @@ public class Test {
         result = -result;
         System.out.println(result);
 
-        char c='1';
+        char c = '1';
         int ic = c;
         System.out.println(ic);
         System.out.println(Integer.MAX_VALUE);
-        System.out.println(Math.pow(2,31));
+        System.out.println(Math.pow(2, 31));
         System.out.println(Integer.MIN_VALUE);
 
         List list = new ArrayList();
         list.forEach(System.out::println);
-        Double d = Double.MAX_VALUE-1000000;
-        System.out.println("long"+Long.MAX_VALUE);
-        System.out.println("double"+d.longValue());
+        Double d = Double.MAX_VALUE - 1000000;
+        System.out.println("long" + Long.MAX_VALUE);
+        System.out.println("double" + d.longValue());
 
-        for(int i=0;i<10;i++){
+        for (int i = 0; i < 10; i++) {
             System.out.println(new Random().nextInt());
         }
     }

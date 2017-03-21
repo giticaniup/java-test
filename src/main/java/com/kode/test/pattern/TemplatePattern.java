@@ -16,7 +16,7 @@ abstract class Coder {
     abstract protected void printCode();
 }
 
-class Boy extends Coder{
+class Boy extends Coder {
 
     @Override
     protected void openComputer() {
@@ -29,7 +29,7 @@ class Boy extends Coder{
     }
 }
 
-class Girl extends Coder{
+class Girl extends Coder {
 
     @Override
     protected void openComputer() {

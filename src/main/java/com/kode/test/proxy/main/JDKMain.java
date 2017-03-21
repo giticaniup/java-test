@@ -14,7 +14,7 @@ public class JDKMain {
         //先创建代理对象
         DynamicCountProxy dynamicCountProxy = new DynamicCountProxy();
         //为被代理对象创建实例，使用bind方法
-        Count count =  dynamicCountProxy.bind(new CountImpl());
+        Count count = dynamicCountProxy.bind(new CountImpl());
         //调用目标方法
         count.count();
     }

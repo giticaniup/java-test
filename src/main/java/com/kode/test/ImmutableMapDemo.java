@@ -10,7 +10,7 @@ import java.util.Set;
  */
 public class ImmutableMapDemo {
     public static void main(String[] args) {
-        ImmutableMap<String,Set<String>> typesMap = new ImmutableMap.Builder<String,Set<String>>().put("images", Sets.newHashSet("jpg","png")).build();
+        ImmutableMap<String, Set<String>> typesMap = new ImmutableMap.Builder<String, Set<String>>().put("images", Sets.newHashSet("jpg", "png")).build();
         System.out.println(typesMap);
     }
 }

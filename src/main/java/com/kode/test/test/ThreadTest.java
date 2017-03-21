@@ -17,7 +17,7 @@ class NumberThread implements Runnable {
 
     @Override
     public void run() {
-        while (true){
+        while (true) {
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
@@ -36,6 +36,6 @@ public class ThreadTest {
         t1.start();
         Thread.sleep(1000);
         System.out.println("change i to 2");
-        numberThread.i=2;
+        numberThread.i = 2;
     }
 }

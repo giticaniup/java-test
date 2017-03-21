@@ -3,7 +3,6 @@ package com.kode.concurrent.share;
 import org.apache.commons.lang.time.StopWatch;
 import org.junit.Test;
 
-import java.util.concurrent.CompletionService;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 

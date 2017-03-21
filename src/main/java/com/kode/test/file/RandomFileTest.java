@@ -19,9 +19,9 @@ public class RandomFileTest {
             while ((result = randomAccessFile.read()) != -1) {
                 System.out.println((char) result);
             }
-        }catch (IOException ie){
+        } catch (IOException ie) {
             ie.printStackTrace();
-        }finally {
+        } finally {
             try {
                 randomAccessFile.close();
             } catch (IOException e) {
@@ -31,9 +31,9 @@ public class RandomFileTest {
     }
 
     @Test
-    public void testRandomWrite() throws Exception{
-        RandomAccessFile randomAccessFile = new RandomAccessFile("C:/file/1.txt","rw");
-        randomAccessFile.write("hello".getBytes(),0,"hello".getBytes().length);
+    public void testRandomWrite() throws Exception {
+        RandomAccessFile randomAccessFile = new RandomAccessFile("C:/file/1.txt", "rw");
+        randomAccessFile.write("hello".getBytes(), 0, "hello".getBytes().length);
         randomAccessFile.close();
     }
 }

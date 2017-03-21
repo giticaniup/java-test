@@ -7,5 +7,6 @@ import java.util.List;
  */
 public interface CarBuilder {
     void setSeq(List<String> list);
+
     CarModel getCarModel();
 }

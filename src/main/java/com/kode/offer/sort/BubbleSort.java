@@ -35,7 +35,7 @@ public class BubbleSort {
             System.out.println("----");
             flag = false;
             for (int j = array.length - 1; j > i; j--) {
-                if (array[j-1] > array[j]) {
+                if (array[j - 1] > array[j]) {
                     Utils.swap(array, j, j - 1);
                     flag = true;
                 }
@@ -50,14 +50,14 @@ public class BubbleSort {
     }
 
     @Test
-    public void testBubbleBetter(){
+    public void testBubbleBetter() {
         int[] array = {2, 3, 9, 5, 1, 7, 6, 8, 4};
         System.out.println(Arrays.toString(bubbleSortBetter(array)));
     }
 
     @Test
-    public void testBubbleBetterWithOrder(){
-        int[] array = {1,2,3,4,5,6,7,8,9};
+    public void testBubbleBetterWithOrder() {
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         System.out.println(Arrays.toString(bubbleSort(array)));
         System.out.println(Arrays.toString(bubbleSortBetter(array)));
     }

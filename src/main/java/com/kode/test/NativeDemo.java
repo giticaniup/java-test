@@ -12,9 +12,9 @@ public class NativeDemo {
         String s1 = "Hello";
         StringBuffer sb = new StringBuffer("Hello");
         String sbStr = sb.toString();
-        System.out.println(s==s1);
-        System.out.println(s==sbStr);
-        System.out.println(1<<4);
-        System.out.println(1<<3);
+        System.out.println(s == s1);
+        System.out.println(s == sbStr);
+        System.out.println(1 << 4);
+        System.out.println(1 << 3);
     }
 }

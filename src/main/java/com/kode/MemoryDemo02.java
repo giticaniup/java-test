@@ -11,10 +11,11 @@ public class MemoryDemo02 {
         List<String> list = Collections.singletonList("1");
         System.out.println(pop(list));
     }
-    public static<E> E pop(List<E> list){
-        if(list==null || list.size()==0){
+
+    public static <E> E pop(List<E> list) {
+        if (list == null || list.size() == 0) {
             return null;
         }
-        return list.get(list.size()-1);
+        return list.get(list.size() - 1);
     }
 }

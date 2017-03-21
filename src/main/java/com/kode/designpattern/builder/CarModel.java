@@ -35,7 +35,7 @@ public abstract class CarModel {
         }
     }
 
-    public final void setSeq(List<String> seq){
+    public final void setSeq(List<String> seq) {
         this.seq = seq;
     }
 }

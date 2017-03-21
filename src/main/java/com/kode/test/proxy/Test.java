@@ -5,8 +5,8 @@ package com.kode.test.proxy;
  */
 public class Test {
     public static void main(String[] args) {
-        StudentProxy proxy=new StudentProxy();
-        Person person= (Person) proxy.newInstance(new Student());
+        StudentProxy proxy = new StudentProxy();
+        Person person = (Person) proxy.newInstance(new Student());
         person.speak();
     }
 }

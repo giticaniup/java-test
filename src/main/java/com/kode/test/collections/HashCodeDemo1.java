@@ -5,7 +5,7 @@ package com.kode.test.collections;
  */
 public class HashCodeDemo1 {
     public static void main(String[] args) {
-        String s= "ss";
+        String s = "ss";
         System.out.println(s.hashCode());
         System.out.println("ss".hashCode());
     }

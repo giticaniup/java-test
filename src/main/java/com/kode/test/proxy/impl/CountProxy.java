@@ -10,9 +10,10 @@ import com.kode.test.proxy.Count;
 public class CountProxy implements Count {
     private CountImpl count;
 
-    public CountProxy(CountImpl count){
+    public CountProxy(CountImpl count) {
         this.count = count;
     }
+
     public int count() {
         System.out.println("计数前");
         count.count();

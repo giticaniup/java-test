@@ -6,7 +6,7 @@ package com.kode.test.effectivejava;
  */
 public class ComplexMain {
     public static void main(String[] args) {
-        ComplexPerson complexPerson = new ComplexPerson.Builder("zhongcy",1).age(24).build();
+        ComplexPerson complexPerson = new ComplexPerson.Builder("zhongcy", 1).age(24).build();
         System.out.println(complexPerson);
     }
 }

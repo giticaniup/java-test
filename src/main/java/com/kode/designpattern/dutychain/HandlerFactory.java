@@ -8,10 +8,11 @@ import java.util.List;
  */
 public class HandlerFactory {
     private List<Handler> handlers;
-    public void setSuccessors(List<Handler> handlers){
+
+    public void setSuccessors(List<Handler> handlers) {
         this.handlers = handlers;
         Iterator<Handler> iterator = handlers.iterator();
-        if(iterator.hasNext()) {
+        if (iterator.hasNext()) {
             Handler handler = iterator.next();
             while (iterator.hasNext()) {
                 Handler nextHandler = iterator.next();
@@ -20,8 +21,9 @@ public class HandlerFactory {
             }
         }
     }
-    public void handleEvent(int day){
-        if(handlers!=null){
+
+    public void handleEvent(int day) {
+        if (handlers != null) {
             handlers.iterator().next().handle(day);
         }
     }

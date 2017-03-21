@@ -2,7 +2,6 @@ package com.kode.base;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Vector;
 
 /**
  * Created by zhongcy on 2017-03-05.
@@ -24,7 +23,7 @@ public class ListDemo {
                 }
             }
         }).start();
-        for (int i = 5;i<100;i++){
+        for (int i = 5; i < 100; i++) {
             vector.add(String.valueOf(i));
         }
     }

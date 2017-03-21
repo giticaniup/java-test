@@ -12,8 +12,8 @@ import java.util.Arrays;
 public class HeapSort {
 
     /**
-     * @param array 数组
-     * @param start 开始
+     * @param array  数组
+     * @param start  开始
      * @param length 数组长度，即剩下的数据中的一些值
      */
     public static void heapSort(int[] array, int start, int length) {

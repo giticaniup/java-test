@@ -8,11 +8,11 @@ public class Facade {
 
     private ClassB classB = new ClassB();
 
-    public void method1(){
+    public void method1() {
         this.classA.method();
     }
 
-    public void method2(){
+    public void method2() {
         this.classB.method();
     }
 }

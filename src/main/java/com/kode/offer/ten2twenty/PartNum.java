@@ -14,14 +14,14 @@ public class PartNum {
         int low = 0;
         int high = array.length - 1;
         while (low < high) {
-            while (low < high && !isEven(array[low])){
+            while (low < high && !isEven(array[low])) {
                 low++;
             }
-            while (low<high && isEven(array[high])){
+            while (low < high && isEven(array[high])) {
                 high--;
             }
-            if(low<high){
-                Utils.swap(array,low,high);
+            if (low < high) {
+                Utils.swap(array, low, high);
             }
         }
         return array;

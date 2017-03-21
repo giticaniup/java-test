@@ -19,6 +19,7 @@ public class CgLibProxy implements MethodInterceptor {
 
     /**
      * 创建代理对象
+     *
      * @param target
      * @return
      */
@@ -35,7 +36,7 @@ public class CgLibProxy implements MethodInterceptor {
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         System.out.println("开始执行");
-        methodProxy.invoke(target,objects);
+        methodProxy.invoke(target, objects);
         return null;
     }
 }

@@ -11,7 +11,7 @@ import java.util.List;
 public class FinalTest {
 
     @Test
-    public void testFinal(){
+    public void testFinal() {
         FinalDemo finalDemo = new FinalDemo(new ArrayList<>());
         List<String> list = finalDemo.getList();
         list.add("1");

@@ -12,8 +12,8 @@ public class ListDemo1 {
         List<String> a = new ArrayList<>();
         a.add("1");
         a.add("2");
-        for(String str:a){
-            if("1".equals(str)){
+        for (String str : a) {
+            if ("1".equals(str)) {
                 a.remove(str);
             }
         }

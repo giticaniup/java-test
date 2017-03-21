@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class MemoryDemo01 {
 
-    static class A{
+    static class A {
         String name;
 
         public String getName() {
@@ -31,7 +31,7 @@ public class MemoryDemo01 {
 
     public static void main(String[] args) {
         List<A> list = new ArrayList<>();
-        for(int i=0;i<100;i++){
+        for (int i = 0; i < 100; i++) {
             A a = new A();
             a.setName(String.valueOf(i));
             list.add(a);

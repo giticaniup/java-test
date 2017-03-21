@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-        List<String> list = Arrays.asList("boom","start","stop");
+        List<String> list = Arrays.asList("boom", "start", "stop");
         BenzBuilder benzBuilder = new BenzBuilder();
         benzBuilder.setSeq(list);
         CarModel carModel = benzBuilder.getCarModel();

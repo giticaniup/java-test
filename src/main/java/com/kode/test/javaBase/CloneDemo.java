@@ -14,7 +14,8 @@ public class CloneDemo {
         System.out.println(co.clone());
     }
 }
-class CloneObject implements Cloneable{
+
+class CloneObject implements Cloneable {
     private Integer id = 1;
 
     private String name;

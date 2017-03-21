@@ -13,5 +13,7 @@ public class Test {
         int i3=3000;
         System.out.println(Objects.equals(i1, i2));
         System.out.println(i1.equals(i3));
+        System.out.println(System.currentTimeMillis() / 1000);
+        System.out.println(30*24*3600);
     }
 }

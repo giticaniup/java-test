@@ -10,7 +10,7 @@ public class MD5EncryptDemo {
         for (int i = 0; i < 10; i++) {
 //            System.out.println(Md5Crypt.md5Crypt("admin".getBytes(),"admin"));
             System.out.println(Crypt.crypt("admin".getBytes()));
-            System.out.println(Crypt.crypt("admin".getBytes(),"admin"));
+            System.out.println(Crypt.crypt("admin".getBytes(), "admin"));
         }
     }
 }

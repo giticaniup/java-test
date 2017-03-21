@@ -40,11 +40,11 @@ public class Person {
                 .toString();
     }
 
-    public Person(int age){
+    public Person(int age) {
         this.age = age;
     }
 
-    public Person(){
+    public Person() {
 
     }
 }

@@ -29,7 +29,7 @@ public class AddTwoNum {
     public static void main(String[] args) {
         ListNode l1 = new ListNode(1);
         ListNode l2 = new ListNode(3);
-        System.out.println(addTwoNum(l1,l2));
+        System.out.println(addTwoNum(l1, l2));
     }
 }
 
@@ -40,6 +40,7 @@ class ListNode {
     ListNode(int val) {
         this.val = val;
     }
+
     @Override
     public String toString() {
         return MoreObjects.toStringHelper(this)

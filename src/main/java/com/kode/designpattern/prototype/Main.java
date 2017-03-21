@@ -12,9 +12,9 @@ package com.kode.designpattern.prototype;
 public class Main {
     public static void main(String[] args) throws CloneNotSupportedException {
         Mail mail = new Mail("Subject");
-        for(int i = 0;i<10;i++){
+        for (int i = 0; i < 10; i++) {
             Mail newMail = mail.clone();
-            newMail.setMailContext("Context"+i);
+            newMail.setMailContext("Context" + i);
             System.out.println(newMail);
         }
     }

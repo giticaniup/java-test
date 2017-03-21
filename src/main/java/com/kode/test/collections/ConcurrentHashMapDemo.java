@@ -16,7 +16,7 @@ public class ConcurrentHashMapDemo {
         List<String> list = new ArrayList<>(10);
         Set<String> set = new HashSet<>(list);
         ConcurrentHashMap map = new ConcurrentHashMap();
-        map.put(null,"1");
+        map.put(null, "1");
         System.out.println();
     }
 }

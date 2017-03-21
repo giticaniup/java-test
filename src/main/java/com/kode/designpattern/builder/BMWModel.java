@@ -3,7 +3,7 @@ package com.kode.designpattern.builder;
 /**
  * Created by zhongcy on 2017-02-28.
  */
-public class BMWModel extends CarModel{
+public class BMWModel extends CarModel {
     @Override
     public void boom() {
         System.out.println("BMW boom");

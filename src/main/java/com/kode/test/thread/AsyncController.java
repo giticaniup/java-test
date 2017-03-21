@@ -3,6 +3,7 @@ package com.kode.test.thread;
 /**
  * Created by zhongcy on 2016/9/23.
  */
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;

@@ -15,7 +15,7 @@ public class FinalTest {
         try {
             System.out.println(1);
             return 1;
-        }finally {
+        } finally {
             System.exit(0);
             return 2;
         }

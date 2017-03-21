@@ -11,7 +11,7 @@ public class LeastNumber {
         int mid = low;
         while (low < high && array[low] >= array[high]) {
             //只有两个数，就没有必要折半查找了。避免两个相邻的数字出现死循环
-            if(high - low == 1){
+            if (high - low == 1) {
                 mid = high;
                 break;
             }
@@ -22,7 +22,7 @@ public class LeastNumber {
                 low = mid;
             } else if (array[mid] < array[high]) {
                 high = mid;
-            }else if(array[low] == array[mid] && array[mid]==array[high]){
+            } else if (array[low] == array[mid] && array[mid] == array[high]) {
                 return findLeastByOrder(array);
             }
         }
@@ -34,8 +34,8 @@ public class LeastNumber {
      */
     private static int findLeastByOrder(int[] array) {
         int min = array[0];
-        for(int i = 1;i<array.length;i++){
-            if(array[i]<min){
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < min) {
                 min = array[i];
             }
         }

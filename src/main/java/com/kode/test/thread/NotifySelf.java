@@ -14,12 +14,13 @@ public class NotifySelf {
 
 
 }
+
 class WaitThread extends Thread {
 
     private Object lock = new Object();
 
     public void run() {
-        synchronized(lock) {
+        synchronized (lock) {
             System.out.println("线程开始等待");
             try {
                 lock.wait();
@@ -31,7 +32,7 @@ class WaitThread extends Thread {
     }
 
     public void notifyself() {
-        synchronized(lock) {
+        synchronized (lock) {
             lock.notify();
         }
     }

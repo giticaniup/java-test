@@ -8,11 +8,11 @@ import java.util.UUID;
  */
 public class RandomString {
 
-    public UUID byUUid(){
+    public UUID byUUid() {
         return UUID.randomUUID();
     }
 
-    public String byRandom(){
+    public String byRandom() {
         StringBuilder sb = new StringBuilder("");
 
         Random random = new Random();
@@ -25,18 +25,18 @@ public class RandomString {
     public static void main(String[] args) {
         RandomString r = new RandomString();
         long begin = System.currentTimeMillis();
-        for(int i=0;i<10000;i++){
+        for (int i = 0; i < 10000; i++) {
             r.byUUid();
         }
         long end = System.currentTimeMillis();
-        System.out.println(end-begin);
+        System.out.println(end - begin);
 
         begin = System.currentTimeMillis();
-        for(int i=0;i<10000;i++){
+        for (int i = 0; i < 10000; i++) {
             r.byRandom();
         }
         end = System.currentTimeMillis();
-        System.out.println(end-begin);
+        System.out.println(end - begin);
 
     }
 }

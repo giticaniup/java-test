@@ -13,7 +13,7 @@ public class BackWardsN {
         ListNode l1 = listNode;
         ListNode l2 = listNode;
         for (int i = 0; i < k - 1; i++) {
-            if(l1==null){
+            if (l1 == null) {
                 throw new RuntimeException("参数输入不合法");
             }
             l1 = l1.getNext();

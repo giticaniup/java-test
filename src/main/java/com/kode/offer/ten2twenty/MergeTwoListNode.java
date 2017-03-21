@@ -17,13 +17,13 @@ public class MergeTwoListNode {
         ListNode listNode = new ListNode();
         //保存引用
         ListNode result = listNode;
-        while (n1 !=null && n2 !=null){
-            if(n1.getVal() >= n2.getVal()){
+        while (n1 != null && n2 != null) {
+            if (n1.getVal() >= n2.getVal()) {
                 listNode.setVal(n2.getVal());
                 listNode.setNext(new ListNode());
                 listNode = listNode.getNext();
                 n2 = n2.getNext();
-            }else {
+            } else {
                 listNode.setVal(n1.getVal());
                 listNode.setNext(new ListNode());
                 listNode = listNode.getNext();
@@ -34,8 +34,8 @@ public class MergeTwoListNode {
     }
 
     public static void main(String[] args) {
-        ListNode n1 = ListNode.init(Arrays.asList(1,3,5,7));
-        ListNode n2 = ListNode.init(Arrays.asList(2,4,6,8));
-        System.out.println(merge(n1,n2));
+        ListNode n1 = ListNode.init(Arrays.asList(1, 3, 5, 7));
+        ListNode n2 = ListNode.init(Arrays.asList(2, 4, 6, 8));
+        System.out.println(merge(n1, n2));
     }
 }

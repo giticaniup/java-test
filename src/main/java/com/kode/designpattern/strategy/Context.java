@@ -10,7 +10,7 @@ public class Context {
         this.strategy = strategy;
     }
 
-    public void work(){
+    public void work() {
         this.strategy.execute();
     }
 }

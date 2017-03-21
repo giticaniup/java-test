@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- *
  * Created by zhongcy on 2017-03-03.
  */
 public class ListListDemo {

@@ -24,7 +24,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        int[] result = twoSum(new int[]{2, 4, 3},6);
+        int[] result = twoSum(new int[]{2, 4, 3}, 6);
         System.out.println(result);
     }
 }

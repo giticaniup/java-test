@@ -49,10 +49,10 @@ public class TestTryLock {
         TestTryLock fromAccount = new TestTryLock();
         TestTryLock toAccount = new TestTryLock();
         new Thread(() -> {
-            transfer(fromAccount,toAccount,100);
+            transfer(fromAccount, toAccount, 100);
         }).start();
         new Thread(() -> {
-            transfer(toAccount,fromAccount,10);
+            transfer(toAccount, fromAccount, 10);
         }).start();
         Thread.sleep(1000);
         System.out.println(fromAccount.money);

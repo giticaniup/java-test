@@ -11,10 +11,10 @@ import java.io.File;
 public class ReplaceDemo {
     public static void main(String[] args) {
         String str = "Hello World I am \\Zhongcy";
-        System.out.println(str.replace(' ','_'));
-        System.out.println(str.replace(" ","_"));
+        System.out.println(str.replace(' ', '_'));
+        System.out.println(str.replace(" ", "_"));
         //在正则中，需要用\\\\来代表\，因为\\代表\，正则又是用\\代表\
-        System.out.println(str.replaceAll("\\\\","\\\\\\\\"));
+        System.out.println(str.replaceAll("\\\\", "\\\\\\\\"));
         //返回char
         System.out.println(File.separatorChar);
         //返回String

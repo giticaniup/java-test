@@ -10,7 +10,7 @@ public class DyadicArraySearch {
     /**
      * 选取右上角的数字作为查找的开始
      *
-     * @param array  数组
+     * @param array   数组
      * @param rows    行
      * @param columns 列
      */

@@ -8,8 +8,8 @@ import java.util.Arrays;
  */
 public class Main {
     public static void main(String[] args) {
-        HandlerFactory handlerFactory =new HandlerFactory();
-        handlerFactory.setSuccessors(Arrays.asList(new Employee(),new Manager(),new Boss()));
+        HandlerFactory handlerFactory = new HandlerFactory();
+        handlerFactory.setSuccessors(Arrays.asList(new Employee(), new Manager(), new Boss()));
         handlerFactory.handleEvent(1);
     }
 }

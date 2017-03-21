@@ -1,15 +1,14 @@
 package com.kode.designpattern.mediator;
 
 /**
- *
  * Created by zhongcy on 2017-03-01.
  */
-public class Mideator extends AbstractMediator{
+public class Mideator extends AbstractMediator {
     @Override
     public void excute(String s, Object... objects) {
-        if("sale".equals(s)){
+        if ("sale".equals(s)) {
             saleComputer(objects);
-        }else if("stock".equals(s)){
+        } else if ("stock".equals(s)) {
             stockComputer(objects);
         }
     }

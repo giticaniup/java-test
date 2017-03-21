@@ -9,11 +9,11 @@ import java.lang.reflect.Proxy;
  */
 public class Agent implements InvocationHandler {
 
-    public  Object target;
+    public Object target;
 
     //绑定
-    public Object bind(Object target){
-        this.target=target;
+    public Object bind(Object target) {
+        this.target = target;
         //必须放回Proxy
         return Proxy.newProxyInstance(target.getClass().getClassLoader(), target.getClass().getInterfaces(), this);
     }
@@ -21,7 +21,7 @@ public class Agent implements InvocationHandler {
     //重新
     public Object invoke(Object proxy, Method method, Object[] args)
             throws Throwable {
-        Object o =null;
+        Object o = null;
         System.out.println("开始事务");
         System.out.println("判断权限");
 

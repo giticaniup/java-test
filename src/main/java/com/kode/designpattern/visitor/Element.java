@@ -6,5 +6,6 @@ package com.kode.designpattern.visitor;
  */
 public interface Element {
     int salary();
+
     void accept(IVisitor IVisitor);
 }

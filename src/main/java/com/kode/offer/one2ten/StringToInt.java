@@ -30,17 +30,17 @@ public class StringToInt {
         }
 
         for (int i = 1; i < s.length(); i++) {
-            String subStr = s.substring(i, i+1);
+            String subStr = s.substring(i, i + 1);
             Matcher matcher = pattern.matcher(subStr);
             if (!matcher.matches()) {
                 throw new RuntimeException("输入不合法");
             }
-            if((!negFlag && result>Integer.MAX_VALUE/10)|| (negFlag&& result+Integer.MIN_VALUE/10>0)){
-                return negFlag?Integer.MIN_VALUE:Integer.MAX_VALUE;
+            if ((!negFlag && result > Integer.MAX_VALUE / 10) || (negFlag && result + Integer.MIN_VALUE / 10 > 0)) {
+                return negFlag ? Integer.MIN_VALUE : Integer.MAX_VALUE;
             }
-            result = result*10+Integer.valueOf(subStr);
+            result = result * 10 + Integer.valueOf(subStr);
         }
-        if(negFlag){
+        if (negFlag) {
             return -result;
         }
         return result;

@@ -8,19 +8,20 @@ package com.kode.test.concurrency;
 public class ThreadException {
     public static void main(String[] args) {
         ExceptionThread et = new ExceptionThread();
-        et.setUncaughtExceptionHandler((t, e) -> System.out.println(t.getName()+e));
+        et.setUncaughtExceptionHandler((t, e) -> System.out.println(t.getName() + e));
         try {
             et.start();
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("here");
             e.printStackTrace();
         }
     }
 }
-class ExceptionThread extends Thread{
+
+class ExceptionThread extends Thread {
     @Override
-    public void run(){
-        int i = 1/0;
+    public void run() {
+        int i = 1 / 0;
     }
 
 }

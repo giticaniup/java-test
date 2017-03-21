@@ -12,7 +12,7 @@ public class WatiDemo {
         demo.todoFunction();
     }
 
-    public  void todoFunction(){
+    public void todoFunction() {
         synchronized (this) {
             System.out.println("主线程执行");
             try {
@@ -55,7 +55,7 @@ public class WatiDemo {
 //                    } catch (InterruptedException e) {
 //                        e.printStackTrace();
 //                    }
-                   notifyAll();
+                    notifyAll();
                     System.out.println("test2已经执行");
                 }
             });

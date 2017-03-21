@@ -6,8 +6,8 @@ package com.kode.offer.one2ten;
  */
 public class ReplaceBlank {
 
-    public static String replaceBlank(String s){
-        return s.replaceAll(" ","%20");
+    public static String replaceBlank(String s) {
+        return s.replaceAll(" ", "%20");
     }
 
     public static void main(String[] args) {

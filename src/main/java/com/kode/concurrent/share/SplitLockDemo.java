@@ -16,23 +16,25 @@ public class SplitLockDemo {
     /**
      * 访客set
      */
-    private final Set<String> visitors  = new HashSet<>();
+    private final Set<String> visitors = new HashSet<>();
 
-    public synchronized void addUser(String user){
+    public synchronized void addUser(String user) {
         this.users.add(user);
     }
-    public synchronized void addVisitor(String visitor){
+
+    public synchronized void addVisitor(String visitor) {
         this.visitors.add(visitor);
     }
 
     //锁拆分
-    public void betterAddUser(String user){
-        synchronized (users){
+    public void betterAddUser(String user) {
+        synchronized (users) {
             users.add(user);
         }
     }
-    public void betterAddVisitor(String visitor){
-        synchronized (visitors){
+
+    public void betterAddVisitor(String visitor) {
+        synchronized (visitors) {
             visitors.add(visitor);
         }
     }

@@ -6,8 +6,8 @@ package com.kode.test.exception;
 public class ExceptionDemo03 {
     public static void main(String[] args) {
         try {
-            int i = 1/0;
-        }catch (Exception e) {
+            int i = 1 / 0;
+        } catch (Exception e) {
             throw new RuntimeException();
         }
         System.out.println(11);

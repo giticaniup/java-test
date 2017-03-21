@@ -16,6 +16,6 @@ public class ClassDemo1 {
         ArrayList<String> list = new ArrayList<>();
         System.out.println(list.getClass());
         System.out.println(ArrayList.class);
-        System.out.println(list.getClass()== ArrayList.class);
+        System.out.println(list.getClass() == ArrayList.class);
     }
 }

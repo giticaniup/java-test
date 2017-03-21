@@ -8,8 +8,9 @@ public enum Light {
     GREEN(2);
 
     int num;
-    Light(int num){
-        this.num=num;
+
+    Light(int num) {
+        this.num = num;
     }
 
 }

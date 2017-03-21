@@ -5,7 +5,7 @@ package com.kode.designpattern.adapter;
  * Created by zhongcy on 2017-03-17.
  */
 public class Adaptee {
-    public void doSomething(){
+    public void doSomething() {
         System.out.println("Adaptee 做一些事情");
     }
 }

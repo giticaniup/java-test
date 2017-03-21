@@ -15,6 +15,7 @@ public class RunnableDemo {
         My2 my2 = new My2();
         my2.start();
     }
+
     @Test
     public void testRunnable() {
         System.out.println("11");
@@ -36,9 +37,9 @@ class MyThread implements Runnable {
     }
 }
 
-class My2 extends Thread{
+class My2 extends Thread {
     @Override
-    public void run(){
+    public void run() {
         System.out.println(1);
     }
 }

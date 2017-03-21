@@ -16,9 +16,9 @@ public class DoubleDemo {
         System.out.println(d);
         System.out.println(c == d);
 
-        float f1= 2.0f;
+        float f1 = 2.0f;
         float f2 = 1.8f;
-        System.out.println(f1-f2);
+        System.out.println(f1 - f2);
         System.out.println(Double.doubleToLongBits(c));
         System.out.println(Double.doubleToLongBits(d));
 

@@ -38,7 +38,7 @@ public class DecodeUtil {
     public String decrypt(String text) throws Exception {
         Cipher cipher = Cipher.getInstance("AES/CBC/NoPadding");
         SecretKeySpec key_spec = new SecretKeySpec(aesKey, "AES");
-        for(int i=0;i<aesKey.length;i++){
+        for (int i = 0; i < aesKey.length; i++) {
             System.out.print(aesKey[i]);
         }
         IvParameterSpec iv = new IvParameterSpec(Arrays.copyOfRange(aesKey, 0, 16));

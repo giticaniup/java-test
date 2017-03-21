@@ -26,5 +26,4 @@ public class BenzModel extends CarModel {
     }
 
 
-
 }

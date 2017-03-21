@@ -18,15 +18,15 @@ public class Origin {
         this.state = state;
     }
 
-    public Memento createBackup(String state){
+    public Memento createBackup(String state) {
         return new Memento(state);
     }
 
-    public void restoreBackup(Memento memento){
+    public void restoreBackup(Memento memento) {
         setState(memento.getState());
     }
 
-    static class Memento{
+    static class Memento {
 
         private String state;
 

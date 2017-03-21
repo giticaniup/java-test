@@ -20,7 +20,7 @@ public class TestLock {
             Thread.sleep(1000);
             child.interrupt();
             Thread.sleep(10000);
-        }finally {
+        } finally {
 //            lock.unlock();
             System.out.println("不释放锁");
         }

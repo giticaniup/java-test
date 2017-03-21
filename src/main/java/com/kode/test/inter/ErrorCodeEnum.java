@@ -7,9 +7,9 @@ import com.google.common.base.MoreObjects;
  */
 public enum ErrorCodeEnum {
 
-    PARAM_ILLEGAL(1,"illgal","paramillger"),
+    PARAM_ILLEGAL(1, "illgal", "paramillger"),
 
-    TWO_ILLEGAL(1,"two"),;
+    TWO_ILLEGAL(1, "two"),;
     private int errorCode;
     private String errorMsg;
     private String description;
@@ -38,15 +38,17 @@ public enum ErrorCodeEnum {
         this.description = description;
     }
 
-    ErrorCodeEnum(int errorCode, String errorMsg, String description){
-        this.errorCode=errorCode;
-        this.errorMsg=errorMsg;
-        this.description=description;
+    ErrorCodeEnum(int errorCode, String errorMsg, String description) {
+        this.errorCode = errorCode;
+        this.errorMsg = errorMsg;
+        this.description = description;
     }
-    ErrorCodeEnum(int errorCode, String errorMsg){
-        this.errorCode=errorCode;
-        this.errorMsg=errorMsg;
+
+    ErrorCodeEnum(int errorCode, String errorMsg) {
+        this.errorCode = errorCode;
+        this.errorMsg = errorMsg;
     }
+
     @Override
     public String toString() {
         return MoreObjects.toStringHelper(this)

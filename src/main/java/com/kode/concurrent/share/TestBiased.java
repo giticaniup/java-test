@@ -11,17 +11,17 @@ import java.util.Vector;
 public class TestBiased {
     public static List<Integer> numberList = new Vector<Integer>();
 
-	public static void main(String[] args) throws InterruptedException {
-		long begin = System.currentTimeMillis();
-		int count = 0;
-		int startNum = 0;
-		while (count < 10000000) {
-			numberList.add(startNum);
-			startNum += 2;
-			count++;
-		}
-		long end = System.currentTimeMillis();
-		System.out.println(end - begin);
-	}
+    public static void main(String[] args) throws InterruptedException {
+        long begin = System.currentTimeMillis();
+        int count = 0;
+        int startNum = 0;
+        while (count < 10000000) {
+            numberList.add(startNum);
+            startNum += 2;
+            count++;
+        }
+        long end = System.currentTimeMillis();
+        System.out.println(end - begin);
+    }
 
 }

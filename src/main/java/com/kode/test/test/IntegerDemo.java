@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class IntegerDemo {
     @Test
-    public void test(){
+    public void test() {
         System.out.println(Integer.getInteger(null));
         List list = Collections.singletonList(null);
         System.out.println(list);

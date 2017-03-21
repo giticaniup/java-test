@@ -11,13 +11,13 @@ import java.util.PriorityQueue;
 public class PriorityQueueDemo1 {
     public static void main(String[] args) {
         PriorityQueue<LocalDate> priorityQueue = new PriorityQueue<>();
-        priorityQueue.add (LocalDate.of(2003,1,1));
-        priorityQueue.add (LocalDate.of(2001,1,1));
-        priorityQueue.add (LocalDate.of(2004,1,1));
-        priorityQueue.add (LocalDate.of(2002,1,1));
+        priorityQueue.add(LocalDate.of(2003, 1, 1));
+        priorityQueue.add(LocalDate.of(2001, 1, 1));
+        priorityQueue.add(LocalDate.of(2004, 1, 1));
+        priorityQueue.add(LocalDate.of(2002, 1, 1));
 
         priorityQueue.forEach(System.out::println);
-        while (!priorityQueue.isEmpty()){
+        while (!priorityQueue.isEmpty()) {
             System.out.println(priorityQueue.remove());
         }
     }

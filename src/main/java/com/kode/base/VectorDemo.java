@@ -21,7 +21,7 @@ public class VectorDemo {
                 }
             }
         }).start();
-        for (int i = 5;i<100;i++){
+        for (int i = 5; i < 100; i++) {
             vector.add(String.valueOf(i));
         }
     }

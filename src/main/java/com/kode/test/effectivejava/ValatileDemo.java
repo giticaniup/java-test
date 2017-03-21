@@ -11,10 +11,10 @@ public class ValatileDemo {
     }
 
     public static void main(String[] args) {
-        for(int i=0;i<1000;i++){
-            new Thread(){
+        for (int i = 0; i < 1000; i++) {
+            new Thread() {
                 @Override
-                public void run(){
+                public void run() {
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {

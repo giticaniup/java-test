@@ -46,7 +46,7 @@ class RWQueue {
                     + "have read data :" + data);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             rwl.readLock().unlock();
         }
     }
@@ -62,7 +62,7 @@ class RWQueue {
                     + " have write data: " + data);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             rwl.writeLock().unlock();// 释放写锁
         }
     }

@@ -5,10 +5,11 @@ package com.kode.test;
  */
 public class InnerClass {
 
-    public class StaticDemo{
+    public class StaticDemo {
 
     }
 }
-class TestOut{
+
+class TestOut {
     private String name;
 }

@@ -12,7 +12,7 @@ public class BufferedInputStreamDemo {
     public static void main(String[] args) throws IOException {
         BufferedInputStream bufferedInputStream = new BufferedInputStream(System.in);
         char c;
-        while ((c= (char) bufferedInputStream.read())!=-1){
+        while ((c = (char) bufferedInputStream.read()) != -1) {
             System.out.print(c);
         }
     }

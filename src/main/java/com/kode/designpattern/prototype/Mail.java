@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by zhongcy on 2017-03-01.
  */
-public class Mail implements Cloneable{
+public class Mail implements Cloneable {
     private String mailSubject;
 
     private String mailContext;
@@ -59,7 +59,7 @@ public class Mail implements Cloneable{
 
     @Override
     protected Mail clone() throws CloneNotSupportedException {
-        return (Mail)super.clone();
+        return (Mail) super.clone();
     }
 
     @Override
@@ -68,7 +68,7 @@ public class Mail implements Cloneable{
                 .add("mailSubject", mailSubject)
                 .add("mailContext", mailContext)
                 .add("strings", Arrays.toString(strings))
-                .add("stringList",stringList)
+                .add("stringList", stringList)
                 .toString();
     }
 }

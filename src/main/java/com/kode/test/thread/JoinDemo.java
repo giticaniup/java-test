@@ -9,10 +9,11 @@ import java.util.concurrent.TimeUnit;
  */
 public class JoinDemo {
     private static final int MAXIMUM_CAPACITY = 1 << 30;
-    private static final  int MAX = 2<<29;
+    private static final int MAX = 2 << 29;
+
     public static void main(String[] args) throws InterruptedException {
         System.out.println(MAXIMUM_CAPACITY);
-        System.out.println(MAX==MAXIMUM_CAPACITY);
+        System.out.println(MAX == MAXIMUM_CAPACITY);
         System.out.println("main Thread is running....");
         Thread01 thread01 = new Thread01();
         thread01.start();
@@ -23,7 +24,7 @@ public class JoinDemo {
 
 class Thread01 extends Thread {
     @Override
-    public void run(){
+    public void run() {
         Thread021 thread021 = new Thread021();
         thread021.start();
         try {
@@ -39,9 +40,10 @@ class Thread01 extends Thread {
         }
     }
 }
+
 class Thread021 extends Thread {
     @Override
-    public void run(){
+    public void run() {
         System.out.println("thread2 is running");
         try {
             TimeUnit.SECONDS.sleep(1);

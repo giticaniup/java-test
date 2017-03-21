@@ -1,6 +1,5 @@
 package com.kode.test.collections;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.ListIterator;
 

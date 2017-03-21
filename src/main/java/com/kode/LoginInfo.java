@@ -7,7 +7,7 @@ import java.io.Serializable;
 /**
  * Created by zhongcy on 2016/12/27.
  */
-public class LoginInfo implements Serializable{
+public class LoginInfo implements Serializable {
     private static final long serialVersionUID = 2924761517712850234L;
 
     private String name;

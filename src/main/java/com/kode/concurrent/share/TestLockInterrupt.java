@@ -23,7 +23,7 @@ public class TestLockInterrupt {
             Thread.sleep(1000);
             child.interrupt();
             Thread.sleep(10000);
-        }finally {
+        } finally {
             lock.unlock();
         }
     }

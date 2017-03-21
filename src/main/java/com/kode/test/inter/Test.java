@@ -5,7 +5,7 @@ package com.kode.test.inter;
  */
 public class Test {
     public static void main(String[] args) {
-        for(Light light:Light.values()){
+        for (Light light : Light.values()) {
             System.out.println(light);
         }
     }

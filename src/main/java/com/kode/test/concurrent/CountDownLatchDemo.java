@@ -10,7 +10,7 @@ public class CountDownLatchDemo {
     public static long timeTasks(int tNum) throws InterruptedException {
         CountDownLatch startGate = new CountDownLatch(1);
         CountDownLatch endGate = new CountDownLatch(tNum);
-        for(int i = 0;i<tNum;i++){
+        for (int i = 0; i < tNum; i++) {
             final int j = i;
             Thread t = new Thread(new Runnable() {
                 @Override
@@ -34,7 +34,7 @@ public class CountDownLatchDemo {
         System.out.println("Main 阻塞");
         endGate.await();
         long endTime = System.nanoTime();
-        return endTime-start;
+        return endTime - start;
     }
 
     public static void main(String[] args) throws InterruptedException {

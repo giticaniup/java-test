@@ -9,11 +9,11 @@ import java.lang.reflect.Proxy;
  * Created by zhongcy on 2017/2/12.
  */
 public class DynamicDemo {
-    static interface IHello{
+    static interface IHello {
         void say();
     }
 
-    static class Hello implements IHello{
+    static class Hello implements IHello {
 
         @Override
         public void say() {
@@ -21,25 +21,25 @@ public class DynamicDemo {
         }
     }
 
-    static class HelloDynamic implements InvocationHandler{
+    static class HelloDynamic implements InvocationHandler {
 
         Object originalObj;
 
         public Object bind(Object originalObj) {
             this.originalObj = originalObj;
             return Proxy.newProxyInstance(originalObj.getClass().getClassLoader(),
-                    originalObj.getClass().getInterfaces(),this);
+                    originalObj.getClass().getInterfaces(), this);
         }
 
         @Override
         public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
             System.out.println("welcome");
-            return method.invoke(originalObj,args);
+            return method.invoke(originalObj, args);
         }
     }
 
     public static void main(String[] args) {
-        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles",true);
+        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", true);
         IHello hello = (IHello) new HelloDynamic().bind(new Hello());
         hello.say();
     }

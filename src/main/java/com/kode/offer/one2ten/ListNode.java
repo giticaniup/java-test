@@ -58,12 +58,12 @@ public class ListNode {
         }
         ListNode listNode = new ListNode();
         ListNode middle = listNode;
-        for(int i=0;i<integerList.size()-1;i++){
+        for (int i = 0; i < integerList.size() - 1; i++) {
             middle.val = integerList.get(i);
             middle.next = new ListNode();
             middle = middle.next;
         }
-        middle.val = integerList.get(integerList.size()-1);
+        middle.val = integerList.get(integerList.size() - 1);
         return listNode;
     }
 

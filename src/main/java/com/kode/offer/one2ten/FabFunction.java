@@ -26,8 +26,8 @@ public class FabFunction {
         int left = 0;
         int right = 1;
         int fn = 0;
-        for(int i= 2;i<=n;i++){
-            fn = left+right;
+        for (int i = 2; i <= n; i++) {
+            fn = left + right;
             left = right;
             right = fn;
         }

@@ -12,10 +12,10 @@ public class BlockingQueueDemo {
         Plate.AddThread addThread = new Plate.AddThread(plate);
         Plate.TakeThread takeThread = new Plate.TakeThread(plate);
 
-        for(int i=0;i<10;i++) {
+        for (int i = 0; i < 10; i++) {
             new Thread(addThread).start();
         }
-        for(int i=0;i<10;i++) {
+        for (int i = 0; i < 10; i++) {
             new Thread(takeThread).start();
         }
     }

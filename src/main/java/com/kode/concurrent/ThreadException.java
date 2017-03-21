@@ -9,12 +9,13 @@ class ThreadTask extends Thread {
         throw new NullPointerException();
     }
 }
+
 public class ThreadException {
     public static void main(String[] args) {
         ThreadTask tt = new ThreadTask();
         try {
-        tt.start();
-        }catch (NullPointerException e){
+            tt.start();
+        } catch (NullPointerException e) {
             System.out.println("here is a exception");
         }
     }

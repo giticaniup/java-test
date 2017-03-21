@@ -10,7 +10,7 @@ public class RunnableDemo {
         test();
     }
 
-    public static void test(){
+    public static void test() {
         ExecutorService executor = Executors.newCachedThreadPool();
         Task2 task = new Task2();
         Integer result1 = null;

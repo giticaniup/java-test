@@ -2,11 +2,9 @@ package com.kode.date;
 
 import com.kode.Compute;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 
 /**
@@ -24,9 +22,10 @@ public class DateDemo {
         Compute compute = cal();
         compute.compute();
     }
+
     //形如Mon Dec 31 00:00:00 CST 2012字符串转换为相应日期Date
     public static Date parse(String str, String pattern, Locale locale) {
-        if(str == null || pattern == null) {
+        if (str == null || pattern == null) {
             return null;
         }
         try {
@@ -36,15 +35,16 @@ public class DateDemo {
         }
         return null;
     }
+
     //
     public static String format(Date date, String pattern, Locale locale) {
-        if(date == null || pattern == null) {
+        if (date == null || pattern == null) {
             return null;
         }
         return new SimpleDateFormat(pattern, locale).format(date);
     }
 
-    public static Runnable run(){
+    public static Runnable run() {
         return new Runnable() {
             @Override
             public void run() {
@@ -53,7 +53,7 @@ public class DateDemo {
         };
     }
 
-    public static Compute cal(){
+    public static Compute cal() {
         return new Compute() {
             @Override
             public void compute() {
