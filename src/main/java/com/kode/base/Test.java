@@ -17,5 +17,10 @@ public class Test {
         System.out.println(emp.age);
         change(emp);
         System.out.println(emp.age);
+        int num = 964632435;
+        System.out.println(num>Integer.MAX_VALUE);
+        System.out.println(num*10);
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(num*10>Integer.MAX_VALUE);
     }
 }
