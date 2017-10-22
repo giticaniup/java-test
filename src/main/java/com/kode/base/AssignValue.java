@@ -1,7 +1,5 @@
 package com.kode.base;
 
-import sun.nio.cs.ext.GBK;
-
 import java.io.UnsupportedEncodingException;
 
 /**

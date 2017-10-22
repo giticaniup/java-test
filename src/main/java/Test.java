@@ -15,5 +15,7 @@ public class Test {
         System.out.println(i1.equals(i3));
         System.out.println(System.currentTimeMillis() / 1000);
         System.out.println(30*24*3600);
+        String s = "123456";
+        System.out.println(s.substring(6-2));
     }
 }
