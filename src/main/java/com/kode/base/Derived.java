@@ -9,4 +9,9 @@ public class Derived extends Base {
         System.out.println(i);
         return i;
     }
+
+    @Override
+    void print() {
+        System.out.println("Derived");
+    }
 }

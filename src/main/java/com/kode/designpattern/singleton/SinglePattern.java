@@ -1,4 +1,4 @@
-package com.kode.designpattern.singleTon;
+package com.kode.designpattern.singleton;
 
 /**
  * 单例模式的枚举实现

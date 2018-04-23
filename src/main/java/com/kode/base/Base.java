@@ -12,4 +12,8 @@ public class Base {
     public int test(int i){
         return i;
     }
+
+    void print() {
+        System.out.println("Base");
+    }
 }
